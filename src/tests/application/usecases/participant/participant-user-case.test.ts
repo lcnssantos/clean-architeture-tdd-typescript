@@ -1,6 +1,6 @@
 import {ParticipantRepositoryMock} from "../mocks/ParticipantRepository";
-import {ParticipantUserCase} from "../../../usecases/participant";
-import {Participant} from "../../../entity/participant";
+import {ParticipantUserCase} from "../../../../application/usecases/participant";
+import {Participant} from "../../../../domain/entity/participant";
 
 
 test('Should add participant correctly', () => {

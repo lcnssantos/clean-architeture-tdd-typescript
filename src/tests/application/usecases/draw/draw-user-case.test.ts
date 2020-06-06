@@ -1,7 +1,7 @@
-import {DrawUserCase} from "../../../usecases/draw";
+import {DrawUserCase} from "../../../../application/usecases/draw";
 import {ParticipantRepositoryMock} from "../mocks/ParticipantRepository";
-import {Draw} from "../../../entity/draw";
-import {Participant} from "../../../entity/participant";
+import {Draw} from "../../../../domain/entity/draw";
+import {Participant} from "../../../../domain/entity/participant";
 
 
 test('Should create and return Draw', () => {

@@ -1,5 +1,5 @@
-import {RepositoryContract} from '../../../usecases/contracts/RepositoryContract'
-import {Participant} from "../../../entity/participant";
+import {RepositoryContract} from '../../../../application/repositories/RepositoryContract'
+import {Participant} from "../../../../domain/entity/participant";
 
 export class ParticipantRepositoryMock implements RepositoryContract<Participant> {
 

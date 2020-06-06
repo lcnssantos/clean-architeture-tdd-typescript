@@ -1,5 +1,5 @@
-import {Participant} from "../entity/participant";
-import {RepositoryContract} from "./contracts/RepositoryContract";
+import {Participant} from "../../domain/entity/participant";
+import {RepositoryContract} from "../repositories/RepositoryContract";
 
 export class ParticipantUserCase {
     static addParticipant(participant: Participant, participantRepo: RepositoryContract<Participant>) {

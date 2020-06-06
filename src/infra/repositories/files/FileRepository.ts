@@ -1,4 +1,4 @@
-import {RepositoryContract} from "../../usecases/contracts/RepositoryContract";
+import {RepositoryContract} from "../../../application/repositories/RepositoryContract";
 import {existsSync, unlinkSync, writeFileSync, readFileSync} from 'fs'
 
 export class FileRepository<T> implements RepositoryContract<T> {

@@ -1,5 +1,5 @@
-import {Participant} from "../../entity/participant";
-import {Draw} from '../../entity/draw'
+import {Participant} from "../../../domain/entity/participant";
+import {Draw} from '../../../domain/entity/draw'
 
 const getParticipants = (number: number): Array<Participant> => {
     const participants: Array<Participant> = []

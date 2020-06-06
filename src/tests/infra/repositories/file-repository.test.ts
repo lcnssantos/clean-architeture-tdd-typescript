@@ -1,5 +1,5 @@
-import {FileRepository} from "../../repositories/files/FileRepository";
-import {Participant} from "../../entity/participant";
+import {FileRepository} from "../../../infra/repositories/files/FileRepository";
+import {Participant} from "../../../domain/entity/participant";
 
 
 test('Should add data correctly', () => {
