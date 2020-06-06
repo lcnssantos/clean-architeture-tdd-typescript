@@ -20,3 +20,10 @@ test('Should select a winner', () => {
     DrawUserCase.addParticipants(draw, new ParticipantRepositoryMock())
     expect(DrawUserCase.getWinner(draw)).toBeInstanceOf(Participant)
 })
+
+test('Should return all participants', () => {
+    const draw = DrawUserCase.create(0)
+    DrawUserCase.addParticipants(draw, new ParticipantRepositoryMock())
+    expect(DrawUserCase.getParticipants(draw)).toBeInstanceOf(Array)
+    expect(DrawUserCase.getParticipants(draw).length).toBe(3)
+})

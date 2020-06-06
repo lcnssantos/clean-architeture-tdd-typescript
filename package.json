@@ -13,7 +13,9 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "start:run": "jest && tsc && node dist/app.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

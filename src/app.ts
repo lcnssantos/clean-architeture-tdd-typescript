@@ -7,7 +7,6 @@ class Application {
 
     constructor() {
         this.ports = Ignitor.getPorts()
-
         this.startPorts()
     }
 

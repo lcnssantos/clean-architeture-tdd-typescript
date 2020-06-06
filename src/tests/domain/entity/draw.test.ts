@@ -23,9 +23,9 @@ const filterParticipantsByScore = (participants: Array<Participant>, minScore: n
 
 test('Should put only participants with score above minimum', () => {
     const participants = getParticipants(10)
-    const participantsFiltered = filterParticipantsByScore(participants, 5)
+    const participantsFiltered = filterParticipantsByScore(participants, 15)
 
-    const draw = new Draw(5)
+    const draw = new Draw(15)
 
     expect(draw.addParticipants(participants)).toBe(participantsFiltered.length)
 })

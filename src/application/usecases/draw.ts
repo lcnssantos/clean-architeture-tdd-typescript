@@ -8,10 +8,14 @@ export class DrawUserCase {
     }
 
     static addParticipants(draw: Draw, participantRepo: RepositoryContract<Participant>) {
-        draw.addParticipants(participantRepo.findAll())
+        return draw.addParticipants(participantRepo.findAll())
     }
 
     static getWinner(draw: Draw): Participant {
         return draw.do()
+    }
+
+    static getParticipants(draw: Draw): Array<Participant> {
+        return draw.getParticipants()
     }
 }

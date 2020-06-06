@@ -1,5 +1,5 @@
 import {ParticipantRepositoryMock} from "../mocks/ParticipantRepository";
-import {ParticipantUserCase} from "../../../../application/usecases/participant";
+import {ParticipantUseCase} from "../../../../application/usecases/participant";
 import {Participant} from "../../../../domain/entity/participant";
 
 
@@ -8,7 +8,7 @@ test('Should add participant correctly', () => {
 
     participantRepo.deleteAll()
 
-    ParticipantUserCase.addParticipant(
+    ParticipantUseCase.addParticipant(
         new Participant({
             name: 'Ciclano da Silva',
             email: 'ciclano@silva.com',
