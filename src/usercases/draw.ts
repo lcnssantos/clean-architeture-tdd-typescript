@@ -4,7 +4,7 @@ import {Participant} from "../entity/participant";
 
 export class DrawUserCase {
     static create(minScore: number): Draw {
-        return new Draw(5)
+        return new Draw(minScore)
     }
 
     static addParticipants(draw: Draw, participantRepo: ParticipantRepositoryContract) {
