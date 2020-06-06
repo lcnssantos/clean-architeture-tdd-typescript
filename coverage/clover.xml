@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1591406546374" clover="3.2.0">
+  <project timestamp="1591406546374" name="All files">
+    <metrics statements="24" coveredstatements="23" conditionals="2" coveredconditionals="2" methods="15" coveredmethods="14" elements="41" coveredelements="39" complexity="0" loc="24" ncloc="24" packages="2" files="3" classes="3"/>
+    <package name="entity">
+      <metrics statements="13" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="8"/>
+      <file name="draw.ts" path="/home/luciano/Desktop/clean-architeture/src/entity/draw.ts">
+        <metrics statements="11" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="5"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="17" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+      </file>
+      <file name="participant.ts" path="/home/luciano/Desktop/clean-architeture/src/entity/participant.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="9" count="37" type="stmt"/>
+        <line num="13" count="13" type="stmt"/>
+      </file>
+    </package>
+    <package name="repositories.files">
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+      <file name="FileRepository.ts" path="/home/luciano/Desktop/clean-architeture/src/repositories/files/FileRepository.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="25" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

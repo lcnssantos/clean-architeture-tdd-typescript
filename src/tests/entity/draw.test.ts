@@ -5,11 +5,11 @@ const getParticipants = (number: number): Array<Participant> => {
     const participants: Array<Participant> = []
 
     while(number) {
-        participants.push(new Participant(
-            `Fulano ${number}`,
-            `fulano${number}@fulano.com`,
-            Math.ceil(Math.random() * 10)
-        ))
+        participants.push(new Participant({
+            name: `Fulano ${number}`,
+            email: `fulano${number}@fulano.com`,
+            score: Math.ceil(Math.random() * 10)
+        }))
 
         number--
     }

@@ -1,4 +1,4 @@
-import {DrawUserCase} from "../../../usercases/draw";
+import {DrawUserCase} from "../../../usecases/draw";
 import {ParticipantRepositoryMock} from "../mocks/ParticipantRepository";
 import {Draw} from "../../../entity/draw";
 import {Participant} from "../../../entity/participant";

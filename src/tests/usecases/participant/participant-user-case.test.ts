@@ -1,13 +1,19 @@
 import {ParticipantRepositoryMock} from "../mocks/ParticipantRepository";
-import {ParticipantUserCase} from "../../../usercases/participant";
+import {ParticipantUserCase} from "../../../usecases/participant";
 import {Participant} from "../../../entity/participant";
 
 
 test('Should add participant correctly', () => {
     const participantRepo = new ParticipantRepositoryMock()
 
+    participantRepo.deleteAll()
+
     ParticipantUserCase.addParticipant(
-        new Participant('Ciclano da Silva', 'ciclano@silva.com', 5),
+        new Participant({
+            name: 'Ciclano da Silva',
+            email: 'ciclano@silva.com',
+            score: 5
+        }),
         participantRepo
     )
 

@@ -29,4 +29,8 @@ export class Draw {
     getParticipants() {
         return this.participants
     }
+
+    public static fromRaw (data: any) {
+        return new this(data.minScore)
+    }
 }

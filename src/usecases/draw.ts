@@ -1,5 +1,5 @@
 import { Draw } from "../entity/draw";
-import {ParticipantRepositoryContract} from "./contracts/ParticipantRepositoryContract";
+import {RepositoryContract} from "./contracts/RepositoryContract";
 import {Participant} from "../entity/participant";
 
 export class DrawUserCase {
@@ -7,7 +7,7 @@ export class DrawUserCase {
         return new Draw(minScore)
     }
 
-    static addParticipants(draw: Draw, participantRepo: ParticipantRepositoryContract) {
+    static addParticipants(draw: Draw, participantRepo: RepositoryContract<Participant>) {
         draw.addParticipants(participantRepo.findAll())
     }
 
